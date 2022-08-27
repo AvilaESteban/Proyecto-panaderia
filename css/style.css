@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logoPanaderia {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*-------- comienza header ----------*/
+
+.li-header,
+.a-header,
+.button-header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links .li-header {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+/* LINK COLOURS ON HOVER */
+
+.nav_links .li-header .a-header {
+    transition: all 0.3 ease 0s;
+}
+
+.nav_links .li-header .a-header:hover {
+    color: #0088a9;
+}
+
+
+/* BUTTON */
+
+.button-header {
+    padding: 9px 25px;
+    background-color: rgb(7, 14, 15);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+.button-header:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    color: #dfdce3;
+}
+
+
+/*--------- termina header ---------*/
+
+
+/* comienza estilos css en main de index.html */
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, white 50%, rgb(4, 8, 10) 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+.ss {
+    margin: 35px 0px 0px 20px;
+    text-align: center;
+    height: 300px;
+    width: 350px;
+    overflow: hidden;
+    backdrop-filter: blur(10PX);
+    -webkit-backdrop-filter: blur(10PX);
+    border-radius: 20px;
+    border: 1px solid RGBA(255, 255, 255, 0.18);
+    box-shadow: 0px 2PX 20PX 0px RGBA(0, 0, 0, 0.3);
+}
+
+.trib {
+    background-image: url("https://media.istockphoto.com/photos/fresh-cakes-picture-id497959594?b=1&k=20&m=497959594&s=170667a&w=0&h=bARJnh0s5Udce7K30WPdeVnud23lVg5WngzD9Jral9w=");
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trib p {
+    width: 300px;
+    text-align: center;
+}
+
+.timeline {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trib2 {
+    background-image: url("https://media.istockphoto.com/photos/chocolate-pralines-and-red-bals-picture-id1191539541?k=20&m=1191539541&s=170667a&w=0&h=Xkk-42TOfAqmPOfZyj1dD5CpAaq38F7Q-t9IKNN7QfU=");
+}
+
+.trib3 {
+    background-image: url("https://media.istockphoto.com/photos/pastries-full-frame-photo-picture-id987584588?k=20&m=987584588&s=612x612&w=0&h=NFhVYBuGlqiDzmbKe1N2rY-jNIYLODkUoe09nHUb8X0=");
+    background-position: top;
+}
+
+.trib4 {
+    background-image: url("https://media.istockphoto.com/photos/pizza-cooking-ingredients-picture-id544719174?k=20&m=544719174&s=612x612&w=0&h=xsHfWM8v8nzpz2UMbXU_1TT6AgUPqt78KlIhRqepLww=");
+}
+
+.trib5 {
+    background-image: url("https://media.istockphoto.com/photos/assortment-of-japanese-convenience-store-sandwiches-picture-id1280812816?k=20&m=1280812816&s=612x612&w=0&h=LHnLMFl79jbhzwI3VuSR_hElcJ2plLQpbp4WTxk0ZKc=");
+    background-position: top;
+}
+
+.iconoRedes {
+    width: 25px;
+    height: 25px;
+}
+
+h2:hover,
+h4:hover {
+    color: rgb(31, 100, 165);
+}
+
+
+/* termina estilos css en main de index.html */
+
+
+/*comienza css para Productos.html*/
+
+.a-product {
+    text-decoration: none;
+    color: rgb(22, 7, 7);
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.products__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.products__header h1 {
+    margin-top: 2%;
+    font-size: 2.6em;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+.products__header p {
+    margin-bottom: 1.6%;
+    width: 70%;
+    font-size: .9em;
+}
+
+.container-products-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    align-items: flex-start;
+}
+
+.products__item {
+    width: 33.33%;
+    padding: 2%;
+    margin-bottom: 2%;
+    opacity: .7;
+    transition: .6s;
+}
+
+.products__item:hover {
+    opacity: 1;
+    box-shadow: 0 .3em 1.6em 0 #dfdce3;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-desc h2 {
+    border-bottom: 1px solid #fc4a1a;
+    font-size: 1.3em;
+    transition: .6s;
+}
+
+.product-desc h2:hover {
+    border-bottom: 1px solid #f7b733;
+}
+
+.product-desc p {
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: .8em;
+}
+
+.wrap-item-button {
+    margin: .9em auto;
+    text-align: center;
+}
+
+.item-button {
+    padding: .6em 1.6em;
+    background-color: #1a1307;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: .6s;
+}
+
+.item-button:hover {
+    box-shadow: 0 .3em 1.6em .3em #c7c2da;
+}
+
+@media screen and (max-width: 860px) {
+    .products__item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .products__item {
+        width: 100%;
+    }
+}
+
+
+/*comienza efecto parrallax en producto.html */
+
+.parallax {
+    background-image: url("https://media.istockphoto.com/photos/selective-focus-of-freshly-baked-various-bread-in-pastry-department-picture-id1018114822?k=20&m=1018114822&s=612x612&w=0&h=AAS9L3N978cLTO2HUsddlvWrLbx4zLHYmhblHwxdQsE=");
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax2 {
+    background-image: url("https://media.istockphoto.com/photos/homemade-delicious-croissants-on-a-dessert-gray-plate-on-kitchen-picture-id1315120944?k=20&m=1315120944&s=612x612&w=0&h=T-mpYUuJ4xfLZUkzBhy3YqbohdnHooOI6ESeGFnmeG8=");
+}
+
+.parallax3 {
+    background-image: url("https://media.istockphoto.com/photos/a-slice-of-cake-and-ice-cream-picture-id1368967461?k=20&m=1368967461&s=612x612&w=0&h=qjnR7hMduzkSD442QcVDbdEigSvv6-bRINqdpgipqYw=");
+}
+
+.parallax4 {
+    background-image: url("https://media.istockphoto.com/photos/assortment-of-homemade-fall-pies-table-scene-on-dark-wood-picture-id1345857656?b=1&k=20&m=1345857656&s=170667a&w=0&h=wqllyLsxtBHkx53oALDz4QZSWZn8rDlUl0anfEzrhtY=")
+}
+
+
+/*termina efecto parallax y estilos css para producto.html */
+
+
+/* comienza efecto parallax en historia.html  */
+
+.efectoParallax2 {
+    background-image: url("https://media.istockphoto.com/photos/woman-working-at-the-bakery-picture-id469544104?k=20&m=469544104&s=612x612&w=0&h=j2pdpvM9WzaiKHZgdqmiKcsw-r9jCNPnPVu1yJag5C4=");
+    background-size: cover;
+}
+
+.efectoParallax3 {
+    background-image: url("https://media.istockphoto.com/photos/delivery-man-holding-box-picture-id503911906?k=20&m=503911906&s=612x612&w=0&h=OTAaQJUASy6mqhHuSwDznhHDXAhzfKHO2V1OtnawExo=");
+}
+
+
+/* termina efecto parallax en historia.html  */
+
+
+/* efecto parallax en error404.html */
+
+.parallaxError404 {
+    background-image: url("https://previews.123rf.com/images/barsrsind/barsrsind1607/barsrsind160700475/60442501-tortas-sabrosas-sin-patr%C3%B3n-fondo-poner-los-alimentos-pegatina-de-la-panader%C3%ADa-y-envoltura-la-impresi.jpg");
+}
+
+.parallaxError404:hover {
+    filter: grayscale(70%);
+}
